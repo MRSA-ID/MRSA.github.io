@@ -1,0 +1,610 @@
+body{
+	background-color: #0A043C;
+	width:auto;
+}
+/*----------NAVBAR-----------*/
+nav{
+	font-family: Montserrat;
+	font-weight: 600;
+	height: 10vh;
+}
+.images{
+	background-image: url(icon/logo.png);
+	background-size: cover;
+	height: 10vh;
+	width: 350px;
+	float: left;
+}
+.nav-links{
+	display: flex;
+	float: right;
+	list-style: none;
+	width: 50%;
+	height: 100%;
+	justify-content:space-around;
+	align-items: center;
+	margin-left:auto;
+}
+.nav-links li a{
+	text-decoration:none;
+	font-size:16px;
+	color: #fff;
+}
+.nav-links li a:hover::after{
+			content: "";
+			display: block;
+			border-bottom: 3px solid #A3DDCB;
+			width: 50%;
+			margin : auto;
+			padding-bottom: 5px;
+			margin-bottom: -8px;
+}
+.nav-links li a:hover{
+	color: #A3DDCB ;
+}
+/*----------Akhir NAVBAR-----------*/
+
+/*----------Container-----------*/
+.container-fluid{
+	max-width: 1110;
+	padding:0px 100px;
+
+}
+
+	/*----------introduce-----------*/
+.introduce{
+	margin-top: 50px;
+	font-family: Montserrat;
+	color: #fff;
+}
+.introduce .content_left{
+	padding-top: 20px;
+	position: relative;
+	float: left;
+	left: -100px;
+	opacity: 0;
+	transition:0.8s;
+
+}
+.introduce.active .content_left{
+	left: 0;
+	opacity: 1;
+}
+.introduce .content_left .text-content{
+	color: #CBCBCB;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+.introduce .content_right{
+	position: relative;
+	float: right;
+	right: -50px;
+	opacity: 0;
+	padding-top: 120px;
+	padding-left: 50px;
+	transition: 0.8s;
+}
+.introduce .content_right img{
+	width:550px;
+}
+.introduce.active .content_right{
+	right: 0;
+	opacity: 1;
+}
+.introduce .content_right img{	
+	filter: drop-shadow(0px 0px 30px #000000)
+}
+
+.introduce h1{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 60px;
+	width: 500px;
+}
+.introduce .warna{
+	font-size: 50px;
+	color: #A3DDCB;
+	padding-bottom: 10px;
+}
+.btn {
+	color:#A3DDCB;
+	border: 2px solid #A3DDCB;
+	border-radius: 10px;
+	font-weight:bold;
+	width: 100px;
+}
+.btn:hover{
+	color: #ffe3de;
+	background-color:;
+	border: 2px solid #ffe3de;
+}
+.introduce .content_left .icons{
+	float: right;
+	margin-right: 30px;
+	margin-top: 6px;
+}
+.introduce .content_left .icons a{
+	text-decoration: none;
+	color: #fff;
+	margin-right: 30px;
+}
+.introduce .content_left .icons a:hover{
+	color: #A3DDCB;
+}
+	/*----------Akhir introduce-----------*/
+
+	/*----------ABOUT-----------*/
+
+.about{
+	margin-top: 100px;
+	font-family: Montserrat;
+	color: #fff;
+	margin-bottom: 100px;
+}
+.about span{
+	color: #CC6699;
+}
+.about .title{
+	text-align: center;
+	font-size: 40px;
+	font-style:normal;
+	font-weight:bold;
+}
+.about p{
+	padding-top: 30px;
+	color: #CBCBCB;
+	width: 600px;
+	font-size: 20px;
+	line-height: 40px;
+	letter-spacing: 1px;
+}
+.about .about_left{
+	padding-top:100px;
+	position: relative;
+	float: left;
+	left: -100px;
+	opacity: 0;
+	transition:0.8s;
+}
+.about.active .about_left{
+	left: 0;
+	opacity: 1;
+}
+.about .about_right{
+	padding-top:100px;
+	position: relative;
+	float: right;
+	right: -50px;
+	opacity: 0;
+	transition:0.8s;
+}
+.about .about_left img{
+	width: 550px;
+}
+.about.active .about_right{
+	right: 0;
+	opacity: 1;
+}
+	/*----------Akhir ABOUT-----------*/
+
+	/*----------Projects-----------*/
+
+.projects{
+	margin-top: 100px;
+	color: #CBCBCB;
+	font-family: Montserrat;
+}
+/*.projects .project .content_project{
+	margin:0px auto;
+	padding-left: 30px;
+}*/
+.projects .title{
+	position: relative;
+	float: left;
+	left: -50px;
+	opacity: 0;
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.8s;
+}
+.projects .title.active{
+	left: 0px;
+	opacity: 1;
+}
+.projects .project{
+	position: relative;
+	bottom: -50px;
+	opacity: 0;
+	transition:0.8s;
+}
+.projects.active .project{
+	opacity: 1;
+	bottom: 0px;
+}
+.projects .background{
+	background-size: cover;
+	height: 800px;
+	width: 1110px;
+	border-radius: 30px;
+	margin:50px auto;
+}
+.projects .background.gambar1{
+	background-image:url(img/portofolio.png);
+}
+.projects .background.gambar2{
+	background-image:url(img/pernikahan-sa.png);
+}
+.projects .background.gambar3{
+	background-image:url(img/dy-laundry.png);
+}
+.projects h4{
+	line-height: 30px;
+	margin-bottom: 10px;
+	font-size:20px;
+}
+.projects span{
+	font-weight: bold;
+}
+.projects .icons{
+	position: relative;
+}
+.projects .icons .icon{
+	width:100%;
+	padding:10px;
+}
+.projects a{
+	color: #CBCBCB;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
+	float: left;
+	padding-left:10px;
+}
+.projects a:hover{
+	color:  #A3DDCB;
+}
+.projects i{
+	padding-top:5px;
+	padding-right: 10px;
+	float: left;
+}
+
+
+	/*----------Akhir Projects-----------*/
+/*----------Akhir Container-----------*/
+	/*----------SKillS-----------*/
+.skills{
+	font-family: Montserrat;
+	margin-top: 100px;
+}
+.skills .container-fluid{
+	padding:0px 0px;
+}
+.skills .col-sm-12.content_right1{
+	padding-right:0px;
+}
+.skills .col-lg-6.content_left1{
+	padding-left: 0px;
+}
+.skills .title{
+	position: relative;
+	bottom: -30px;
+	opacity: 0;
+	color: #fff;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	transition: 0.8s;
+}
+.skills .title h2{
+	font-size: 40px;
+	font-weight: bold;
+}
+.skills.active .title{
+	bottom: 0px;
+	opacity: 1;
+}
+.skills .content h1{
+	font-family: Rubik;
+	font-size:180px;
+	font-weight:bold;
+	color: rgba(255, 101, 132, 0.95);
+}
+.skills .content.content_left h1{
+	padding-top: 65%;
+	text-shadow: -20px 0px 0px #060319;
+	margin-left:50px;
+}
+.skills .content.content_left{
+	position: relative;
+	left: -100px;
+	opacity: 0;
+	transition: 0.8s;
+}
+.skills.active .content.content_left{
+	left: 0;
+	opacity: 1;
+}
+.skills .row{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.skills .col-8.content_right1{
+	padding-right: 0px;
+}
+.skills .content_right1{
+	position: relative;
+}
+.skills .content_right1 p{
+	position: absolute;
+	text-align:right;
+	top: 45%;
+	right: 0;
+	opacity: 0;
+	font-weight:600;
+	font-size:28px;
+	width: 600px;
+	color: #3F3D56;
+	transition:0.8s;
+}
+.skills.active .content_right1 p{
+	opacity: 1;
+	right: 10%;
+}
+.skills .content_right1 .icons{
+	position: absolute;
+	top: 70%;
+	left: 60%;
+	opacity: 0;
+	transition:0.8s;
+}
+.skills.active .content_right1 .icons{
+	left: 75%;
+	opacity: 1;
+}
+.skills .content_right1 .icons span img{
+	margin-right: 10px;
+}
+.skills .shape{
+	height: 800px;
+	width:884px;
+}
+/*.skills .shape2{
+	width: 884px;
+}*/
+.skills .shape.bayangan{
+	filter: drop-shadow(0px 40px 0px #06031A);
+}
+.skills .shape1.bayangan{
+	filter: drop-shadow(0px 40px 0px #06031A);
+}
+.skills .row.col-sm-12{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+.skills .row.flex-column-reverse.col-sm-12{
+	padding-left: 0px;
+	padding-right:0px;
+}
+.skills .content_left1{
+	position: relative;
+}
+.skills .content_left1 p{
+	position: absolute;
+	top: 30%;
+	left: 0;
+	opacity: 0;
+	font-weight:600;
+	font-size:29px;
+	width: 600px;
+	color: #3F3D56;
+	transition: 0.8s;
+}
+.skills.active .content_left1 p{
+	left: 10%;
+	opacity: 1;
+}
+.skills .col-lg-6.content_left1{
+	padding-left: 0px;
+	margin-top: 200px;
+}
+.skills .content_left1 .icons{
+	position: absolute;
+	top: 55%;
+	right: 10%;
+	opacity: 0;
+	transition: 0.8s;
+}
+.skills.active .content_left1 .icons{
+	right: 40%;
+	opacity: 1;
+}
+.skills .content_left1 .icons span img{
+	margin-right: 20px;
+	border-radius: 30px;
+}
+.skills .content_left1 .icons .react{
+	border-radius: 0px;
+}
+.skills .content.content_right2 h1{
+	padding-top: 10%;
+	text-shadow: 20px 0px 0px #060319;
+	margin-left:100px;
+}
+.skills .content_right2{
+	margin-top:200px;
+	position: relative;
+	right: 0;
+	opacity: 0;
+	transition: 0.8s;
+}
+.skills.active .content_right2{
+	right: 10px;
+	opacity: 1;
+}
+.skills .content_right3 p{
+	position: absolute;
+	text-align:right;
+	top: 35%;
+	right: 0;
+	font-weight:600;
+	font-size:29px;
+	width: 600px;
+	color: #3F3D56;
+	opacity: 0;
+	transition: 0.8s;
+}
+.skills.active .content_right3 p{
+	right: 10%;
+	opacity: 1;
+}
+.skills .content_right3 .icons{
+	position: absolute;
+	top: 65%;
+	left: 40%;
+	opacity: 0;
+	transition:0.8s;
+}
+.skills.active .content_right3 .icons{
+	left: 63%;
+	opacity: 1;
+}
+.skills .content_right3 .icons span img{
+	margin-right: 20px;
+}
+	/*----------Akhir SKillS-----------*/
+
+	/*----------Certificate-----------*/
+.certificate{
+	font-family: Montserrat;
+	height: 600px;
+	margin-top: 200px;
+	color: #fff;
+}
+.certificate h2{
+	position: relative;
+	font-size: 40px;
+	font-weight:bold;
+	margin-bottom:30px;
+	letter-spacing: 1px;
+	left: -50px;
+	opacity: 0;
+	transition: 0.8s;
+}
+.certificate.active h2{
+	left: 0;
+	opacity: 1;
+}
+.carousel-inner{
+	padding:24px;
+}
+.certificate .card{
+	background-color: #241F49;
+	border-radius: 10px;
+	bottom: -100px;
+	opacity: 0;
+	transition: 0.8s;
+}
+.certificate.active .card{
+	bottom: 0;
+	opacity: 1;
+}
+.certificate .card .carousel-inner{
+	height: 450px;
+}
+.certificate .card .content_right h3{
+	padding-top: 30px;
+	font-weight:bold;
+	font-size:30px;
+	letter-spacing: 1px;
+}
+
+.certificate .company1{
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-size:26px;
+}
+.certificate .company{
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size:26px;
+	color: #61DAFB;
+}
+.certificate .level{
+	padding-top: 10px;
+	font-size:19px;
+	font-weight:bold;
+	color: #61DAFB;
+	letter-spacing: 1px;
+}
+.certificate .detail{
+	color: #CBCBCB;
+	line-height: 30px;
+}
+	/*----------Akhir Certificate-----------*/
+footer{
+	height: 500px;
+	text-align: center; 
+	font-family: Montserrat;
+}
+footer img{
+	margin-top: 50px;
+	max-width: 600px;
+}
+footer p{
+	margin-top:51px;
+	color: #CC6699;
+	font-weight: bold; 
+	font-size:20px;
+}
+footer .icons{
+	margin:0px 45px;
+	margin-top: 20px;
+}
+footer .icons a{
+	text-decoration: none;
+	color: #CBCBCB;
+	margin-right:90px;
+}
+footer .icons a:hover{
+	color: #A3DDCB;
+}
+footer .copyright{
+	margin-top: 25px;
+	color: #fff;
+	font-weight:normal;
+	font-size:16px;
+	letter-spacing: 1px;
+}
+footer .copyright a{
+	text-decoration: none;
+	color: #ffffff;
+}
+footer .copyright a:hover{
+	color: #A3DDCB;
+}
+
+::-webkit-scrollbar{
+	background-color:#060319;
+	width: 17px;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #CBCBCB;
+	border-radius: 20px;
+	border:6px solid transparent;
+	background-clip: content-box;
+	height: 30px;
+	
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: #ffffffff
+}
+::-webkit-scrollbar-track{
+	background-color: transparent;
+}
+
+.navbar-collapse{
+	z-index: 1;
+}
+
